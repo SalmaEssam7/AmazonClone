@@ -1,0 +1,247 @@
+/**
+ * Created by' Salma Essam  on 27/06/2024.
+ */
+
+body{
+    background: white;
+}
+.breadCrum{
+    font-size: 12px;
+    padding: 10px 20px;
+    color: #565656;
+}
+.productDisplay{
+    min-height: 100%;
+    padding: 10px 20px;
+    display: flex;
+}
+.productDImage{
+    display: flex;
+    gap:10px;
+}
+.productIcons{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.productIcons img{
+   border:1px solid gray;
+   padding: 5px;;
+}
+.productDDetails{
+    margin: 0 30px;
+}
+.productTitle{
+    font-size: 25px;
+}
+.brandStore{
+    color: #007185;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.productRating{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.productRating div{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.productRating p{
+    color: #007185;
+}
+.productRating p span{
+    color: white;
+    background: #c73500;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.productRating h5{
+    color: #007185;
+    font-weight: 400;
+}
+.productDPrice{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.productDPrice div{
+    display: flex;
+   align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.productDPrice div p{
+    color: #c73500;
+  font-size: 26px;
+}
+.productDPrice div h1{
+  font-size: 14px;
+  font-weight: 500;
+ 
+}
+.productDPrice div h1 span{
+    font-size: 26px;
+    font-weight: 500;
+   
+  }
+.productDPrice h5{
+    color: #565656;
+    font-weight: 400;
+  }
+  .productDPrice h5 span{
+   text-decoration: line-through;
+  }
+ .productDPrice p span{
+    color: #007185;
+}
+.productColorSelection{
+    margin: 15px 0;
+}
+.productColorOptions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Options{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #cbcbcb;
+    gap: 10px;
+}
+.productInfo{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+.productDescription h1{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.productDescription ul{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-left: 30px;
+}
+.productDPurchase{
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    padding: 20px;
+}
+.productDPurchase .Title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productDPurchase .Price{
+   font-size: 16px;
+   font-weight: 400;
+   margin: 10px 0 ;
+}
+.productDPurchase .Price span{
+    font-size: 26px;
+    padding: 2px;
+ }
+ .productDPurchase .Gap{
+    margin: 15px 0 ;
+ }
+ .productDPurchase p span{
+    color:#007185;
+ }
+ .deliveryLocation{
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+.productStock{
+    margin: 15px 0 ;
+    color:green;
+    font-weight: 400;
+}
+.productQty{
+    padding: 8px 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #efefef;
+    border-color: #c1c1c1;
+
+}
+.productDPurchase .Btn{
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #ffd814;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.productDPurchase .productBuy{
+    background: #ffa41c;
+}
+.productSellerInfo{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+    font-size: 14px;
+    color: #565656;
+}
+.productSellerInfo span{
+    color: #007185;
+}
+.productDPurchase hr{
+    margin: 20px 0;
+}
+.productAddList{
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: start;
+    background: white;
+    cursor: pointer;
+}
+.productFooter{
+    margin-top: 100px;
+}
+
+
+/*----------Media Query---------*/
+
+
+@media only screen and (max-width: 900px) {
+   .productDisplay{
+   flex-wrap: wrap;
+   }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+  .productIcons{
+    display: none;
+  }
+  .productMainImage img{
+    width: 100%;
+    padding: 20px;
+  }
+  .Options{
+    padding: 6px 8px;
+  }
+  .Options p{
+  display: none;
+  }
+  .productDPurchase{
+    max-width: 90%;
+    margin: 20px auto 10px;
+  }
+  }
